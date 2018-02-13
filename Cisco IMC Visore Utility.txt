@@ -1,0 +1,20 @@
+The Cisco IMC Visore Utility
+
+Visore is a utility built into Cisco IMC that allows a user to easily browse Managed Objects (MOs) using an HTML browser. The Visore utility uses the Cisco IMC XML API query methods to browse the MOs active in Cisco 
+IMC. The Visore utility cannot be used to perform configuration operations.
+
+Accessing Visore:
+To access Visore, open a browser and enter one of the following URLs:
+	• http://<Cisco IMC IP Address>/visore.html 
+	• https://<Cisco IMC IP Address>/visore.html 
+
+When prompted, log in using the same credentials you would use to log in to the Cisco IMC CLI or GUI user interfaces.
+
+Using Visore to Query a Class:
+To query for a particular class, enter the class name in the Class or DN field and click Run Query. Visore sends a configResolveClass method to Cisco IMC and the requested MO is displayed in a tabular format..
+
+Use the < and > buttons to retrieve the Parent and Child class of the displayed MO. For example, clicking > sends a configResolveChildren method to Cisco IMC to query for the child of the MO. Clicking < sends a configResolveParent method to Cisco IMC to query for the parent of the MO.
+
+
+Using Visore to Query a Distinguished Name(DN):
+To query for a particular DN, enter the DN in the Class or DN field and click Run Query. Visore sends a configResolveDn method to Cisco IMC.
